@@ -3,20 +3,20 @@
 
 using namespace std;
 
-class RBTNode
-{
-public:
-    int key;
-    int color;
-    RBTNode *lchild, *rchild;
-    RBTNode *parent;
-    RBTNode(int k) : key(k), color(1), lchild(nullptr), rchild(nullptr), parent(nullptr) {}
-    RBTNode() : key(0), color(0), lchild(nullptr), rchild(nullptr), parent(nullptr) {}
-};
-
 class BRTree
 {
+
 public:
+    class RBTNode
+    {
+    public:
+        int key;
+        int color;
+        RBTNode *lchild, *rchild;
+        RBTNode *parent;
+        RBTNode(int k) : key(k), color(1), lchild(nullptr), rchild(nullptr), parent(nullptr) {}
+        RBTNode() : key(0), color(0), lchild(nullptr), rchild(nullptr), parent(nullptr) {}
+    };
     enum
     {
         RED,
