@@ -138,6 +138,7 @@ AVLNode *remove(AVLNode *root, int key)
         }
         else
         {
+            // 找到右子树的最小值
             AVLNode *temp = root->right;
             while (temp->left != nullptr)
                 temp = temp->left;
