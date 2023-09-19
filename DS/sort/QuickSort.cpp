@@ -24,13 +24,14 @@ void QuickSort(vector<int> &arr, int low, int high)
             else
                 --high;
         }
-        if (!lowEmpty)
+        else
         {
 
-            if (arr[high] > temp)
+            if (arr[low] > temp)
             {
                 arr[high] = arr[low];
                 --high;
+                lowEmpty = true;
             }
             else
                 ++low;
@@ -47,7 +48,7 @@ void QuickSort(vector<int> &arr)
 int main()
 
 {
-    SortTest::testSort(QuickSort, 1e2, true);
+    SortTest::testSort(QuickSort, 1e7, false);
 
     return 0;
 }

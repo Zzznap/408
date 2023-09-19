@@ -33,7 +33,7 @@ public:
         start = clock();
         sort(arr);
         end = clock();
-        std::cout << "InsertionSort: " << (double)(end - start) / CLOCKS_PER_SEC << "s" << std::endl;
+        std::cout << "Sort: " << (double)(end - start) / CLOCKS_PER_SEC << "s" << std::endl;
         printArr(arr, isPrint);
         std::cout << std::endl;
     }
