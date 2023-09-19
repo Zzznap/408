@@ -1,5 +1,5 @@
-#ifndef SortTest
-#define SortTest
+#ifndef st
+#define st
 #pragma once
 
 #include <vector>
